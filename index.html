@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | PunchOut</title>
+    <title>Unity WebGL Player | TowerDefence</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1024 height=1024 tabindex="-1" style="width: 1024px; height: 1024px; background: #231F20"></canvas>
-    <script src="Build/PunchOutPvP.loader.js"></script>
+    <canvas id="unity-canvas" width=1267 height=713 tabindex="-1" style="width: 1267px; height: 713px; background: #231F20"></canvas>
+    <script src="Build/Defender.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,13 +25,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/PunchOutPvP.data",
-        frameworkUrl: "Build/PunchOutPvP.framework.js",
-        codeUrl: "Build/PunchOutPvP.wasm",
+        dataUrl: "Build/Defender.data",
+        frameworkUrl: "Build/Defender.framework.js",
+        codeUrl: "Build/Defender.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "PunchOut",
-        productVersion: "0.2.2",
+        productName: "TowerDefence",
+        productVersion: "0.1",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
